@@ -1,0 +1,6 @@
+lib/* /usr/share/games/glgames/lib
+gfx/* /usr/share/games/glgames/gfx
+sfx/* /usr/share/games/glgames/sfx
+
+squeeze usr/games
+tictactoe usr/games

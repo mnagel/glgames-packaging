@@ -1,0 +1,14 @@
+Source: glgames
+Section: games
+Priority: optional
+Maintainer: Michael Nagel <ubuntu@nailor.devzero.de>
+Build-Depends: debhelper (>= 7.0.50~), quilt
+Standards-Version: 3.9.2
+Homepage: http://nailor.devzero.de/code/glgames/
+
+Package: glgames
+Architecture: all
+Depends: ${misc:Depends}, ruby | ruby-interpreter, libopengl-ruby1.8, rubygems, libsdl-ruby 
+Description: 'squeeze' game by Michael Nagel
+ glgames is a collection of games, including the game 'squeeze' where you
+ have to fill your screen with inflating bubbles.
