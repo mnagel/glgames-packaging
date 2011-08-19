@@ -4,3 +4,5 @@ sfx/* /usr/share/games/glgames/sfx
 
 squeeze usr/games
 tictactoe usr/games
+
+glgames.desktop /usr/share/applications/

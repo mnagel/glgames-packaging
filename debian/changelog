@@ -1,3 +1,10 @@
+glgames (011-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add entry to games menu.
+
+ -- Michael Nagel <ubuntu@nailor.devzero.de>  Fri, 19 Aug 2011 22:28:10 +0200
+
 glgames (010-1) unstable; urgency=low
 
   * Initial release.
