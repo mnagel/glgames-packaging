@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 =begin
     sharpmath - mathematical parser and algebraic calculations
     Copyright (C) 2006, 2008, 2009 by Michael Nagel
@@ -135,9 +133,17 @@ module DoNotIntersect
 #
 #      end
 
-      self.pos = old_pos # TODO having them not move at all is not correct, either -- prevent them from getting stuck to each other
+      # TODO having them not move at all is not correct, either
+      # prevent them from getting stuck to each other
+      self.pos = old_pos
 
-      r1, r2 = Math::collide(self.pos, collider.pos, self.v, collider.v, self.size.x ** 2 , collider.size.x ** 2)
+      r1, r2 = Math::collide(
+        self.pos,
+        collider.pos,
+        self.v,
+        collider.v,
+        self.size.x ** 2 ,
+        collider.size.x ** 2)
 
       self.v = r1 * Settings.bounce #@@bounce
       collider.v = r2 * Settings.bounce #@@bounce
