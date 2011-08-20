@@ -1,3 +1,10 @@
+glgames (012-1) unstable; urgency=low
+
+  * New upstream release.
+  * Improved packaging.
+
+ -- Michael Nagel <ubuntu@nailor.devzero.de>  Sat, 20 Aug 2011 12:24:13 +0200
+
 glgames (011-1) unstable; urgency=low
 
   * New upstream release.
