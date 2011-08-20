@@ -2,7 +2,7 @@ Source: glgames
 Section: games
 Priority: optional
 Maintainer: Michael Nagel <ubuntu@nailor.devzero.de>
-Build-Depends: debhelper (>= 7.0.50~), quilt
+Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.2
 Homepage: http://nailor.devzero.de/code/glgames/
 
