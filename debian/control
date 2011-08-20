@@ -8,7 +8,7 @@ Homepage: http://nailor.devzero.de/code/glgames/
 
 Package: glgames
 Architecture: all
-Depends: ${misc:Depends}, ruby | ruby-interpreter, libopengl-ruby1.8, rubygems, libsdl-ruby 
-Description: 'squeeze' game by Michael Nagel
+Depends: ${misc:Depends}, ruby1.8, libopengl-ruby1.8, libsdl-ruby1.8
+Description: collection of games 'squeeze' and 'tictactoe'
  glgames is a collection of games, including the game 'squeeze' where you
  have to fill your screen with inflating bubbles.
