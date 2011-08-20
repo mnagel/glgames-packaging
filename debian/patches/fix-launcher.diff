@@ -1,0 +1,33 @@
+Index: glgames-packaging/squeeze
+===================================================================
+--- glgames-packaging.orig/squeeze	2011-08-20 12:42:04.782636219 +0200
++++ glgames-packaging/squeeze	2011-08-20 12:43:03.770635335 +0200
+@@ -17,9 +17,9 @@
+ # select alternate sound
+ SFX="default"
+ 
+-cd "$(dirname $0)"
++WHERE="/usr/share/games/glgames"
++RUBYGEMS=""
+ 
+-WHERE="."
+-RUBYGEMS="-rubygems"
++cd "$WHERE"
+ 
+ ruby $RUBYGEMS "$WHERE/lib/tools/launcher.rb" squeeze -f $FULLSCREEN -x $WINX -y $WINY -g $GFX -s $SFX $@
+Index: glgames-packaging/tictactoe
+===================================================================
+--- glgames-packaging.orig/tictactoe	2011-08-20 12:42:04.902636218 +0200
++++ glgames-packaging/tictactoe	2011-08-20 12:43:23.402635520 +0200
+@@ -1,8 +1,8 @@
+ #! /bin/bash
+ 
+-cd "$(dirname $0)"
++WHERE="/usr/share/games/glgames"
++RUBYGEMS=""
+ 
+-WHERE="."
+-RUBYGEMS="-rubygems"
++cd "$WHERE"
+ 
+ ruby $RUBYGEMS "$WHERE/lib/tools/launcher.rb" tictactoe
