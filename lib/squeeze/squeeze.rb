@@ -90,7 +90,6 @@ class GameMode # TODO check against this state all over the place!
 end
 
 class SqueezeGameEngine
-  
     def can_spawn_here mouse_model
     if     mouse_model.pos.x < mouse_model.size.x                 \
         or mouse_model.pos.y < mouse_model.size.y                 \
@@ -113,7 +112,7 @@ class SqueezeGameEngine
 
     points = $engine.size_to_score ball.model.size.x
 
-    a = Text.new(0, 0, 5, Color.new(1, 0, 0, 1), Settings.fontfile, points.to_i.to_s)
+    a = Text2.new(0, 0, 5, Color.new(1, 0, 0, 1), Settings.fontfile, points.to_i.to_s)
     a.extend(Pulsing)
 
     $engine.external_timer.call_later(1000) do ball.view.subs = [] end
@@ -250,14 +249,13 @@ class SqueezeGameEngine
         return res.model unless res.nil?
       end
     }
-   # return res
    return nil
   end
 
   def start_level lvl
     @engine_running = true
     @mouse.model.growing = false
-    @score_object.level_up_score = 100 # 0.5 # TODO proper value
+    @score_object.level_up_score = 100
     if lvl > 0
       $sfxengine.play :levelup
       go = Text.new(
