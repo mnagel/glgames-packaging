@@ -37,9 +37,9 @@ class Settings__ < SettingsBase
       proc {
         puts "this is oneshot"
         switches.each { |e|
-          puts '-' + e.char + "\t" + e.comm 
+          puts '-' + e.char + "\t" + e.comm
         };
-        Process.exit 
+        Process.exit
       })
     switches = [
       Switch.new('g', 'select path with gfx (relative to gfx folder)', true, proc {|val| $GFX_PATH = val}),
@@ -64,7 +64,6 @@ class Settings__ < SettingsBase
 
     # TODO dont use global var
     $SFX_PATH = 'default'
-#    parse_args(switches, helpswitch, noswitch, fileswitch)
 
     inf2 = $SFX_PATH
     inf2 = 'default' if inf2.nil?
@@ -89,9 +88,6 @@ class Settings__ < SettingsBase
     @infotext  = <<EOT
     #{PROGNAME} - a simple game.
     Copyright (C) 2009 by Michael Nagel
-
-    icons from buuf1.04.3 http://gnome-look.org/content/show.php?content=81153
-    icons licensed under Creative Commons BY-NC-SA
 EOT
   end
 end
