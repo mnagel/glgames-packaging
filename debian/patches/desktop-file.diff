@@ -1,8 +1,8 @@
 Index: glgames-packaging/glgames.desktop
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ glgames-packaging/glgames.desktop	2011-08-19 23:04:35.638672730 +0200
-@@ -0,0 +1,11 @@
++++ glgames-packaging/glgames.desktop	2012-01-10 19:53:49.430648408 +0100
+@@ -0,0 +1,10 @@
 +[Desktop Entry]
 +Version=1.0
 +Type=Application
@@ -11,6 +11,5 @@ Index: glgames-packaging/glgames.desktop
 +Comment=play the game squeeze
 +Comment[de]=squeeze spielen
 +Exec=squeeze
-+MimeType=text/plain
 +Categories=Application;Game;
 +Icon=/usr/share/games/glgames/gfx/squeeze/default/good/1.png
